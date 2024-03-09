@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="BrowserName" value="Firefox"/>
+    <classes>
+      <class name="TestNGExcution.Create_Account_Script">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="openApp"/>
+          <include name="Create"/>
+          <include name="testMethodExcution"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- TestNGExcution.Create_Account_Script -->
+      <class name="TestNGExcution.Login_Script">
+        <methods>
+          <include name="openApp"/>
+          <include name="openBrowser"/>
+          <include name="testMethodExcution"/>
+          <include name="fbLogin"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- TestNGExcution.Login_Script -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
